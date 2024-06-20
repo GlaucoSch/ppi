@@ -1,0 +1,263 @@
+body {
+  color: #000000;
+  background-color: white;
+  background-image: url('imagens/273726773_431773888745145_2231050707595114401_n.jpg');
+  background-attachment: fixed;
+  background-position: right center;
+  background-size: 800px 500px;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  background-color: #d9d5d5;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+/* Estilos do logo */
+.navbar img {
+  height: 55px;
+  margin-right: 16px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos do nome do usuário */
+.navbar .username {
+  color: #000000;
+  margin-right: auto;
+  margin-left: 900px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos dos links do navbar */
+.navbar a {
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+/* Estilos dos links quando estão ativos ou em hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Estilos do link ativo */
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Estilos do menu lateral */
+.menu {
+  width: 300px;
+  height: 100vh;
+  background-color: #764646;
+  color: #f2f2f2;
+  padding: 16px;
+  position: fixed;
+  left: 0;
+  top: 70px;
+  margin-right: 10px;
+}
+
+/* Estilos da barra vermelha */
+.menu-header {
+  background-color: rgb(199, 166, 166);
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+
+/* Estilos do ícone "home" */
+.menu-header i {
+  color: white;
+  margin-right: 10px;
+}
+
+/* Estilos das opções do menu */
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+/* Estilos dos ícones das opções do menu */
+.menu-item i {
+  margin-right: 10px;
+}
+
+/* Estilos dos links das opções do menu */
+.menu-item a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+/* Estilos dos links quando estão ativos ou em hover */
+.menu-item a:hover {
+  text-decoration: underline;
+}
+
+.imagem-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; /* Ajuste o valor conforme necessário */
+  background-position: center;
+}
+
+.imagem-menu {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.formulario {
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"],
+.formulario select,
+.formulario textarea,
+.formulario input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.formulario textarea {
+  resize: vertical;
+}
+
+.formulario input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------*/
+
+/* Estilos da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos do pop-up */
+.swal2-popup {
+  width: 100%;
+  /*max-width: 800px;*/
+  padding: 20px;
+}
+
+.swal2-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.swal2-content {
+  font-size: 18px;
+}
+
+/* Estilização básica para os botões */
+.menu-item button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Sombreamento ao passar o mouse */
+.menu-item button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Animação de transição suave */
+.menu-item button {
+  transition: box-shadow 0.3s ease;
+}
